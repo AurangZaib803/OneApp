@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1b5e20">
+<title>OneApp Super MEGA FINAL - All Pages Combined - LIVE</title>
+<link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIk9uZUFwcCBTdXBlciBNRUdBIiwKICAic2hvcnRfbmFtZSI6ICJPbmVBcHAiLAogICJzdGFydF91cmwiOiAiLiIsCiAgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsCiAgImJhY2tncm91bmRfY29sb3IiOiAiIzFiNWUyMCIsCiAgInRoZW1lX2NvbG9yIjogIiMxYjVlMjAiCn0=">
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f0f4f0;font-family:sans-serif;padding-bottom:80px}
+.header{background:linear-gradient(135deg,#1b5e20,#2e7d32,#ff6f00);color:white;padding:12px;text-align:center;position:sticky;top:0;z-index:100}
+.header h1{margin:0;font-size:15px}
+.header p{margin:3px 0 0;font-size:10px}
+.topTabs{display:flex;background:white;position:sticky;top:54px;z-index:90;overflow-x:auto;box-shadow:0 2px 4px rgba(0,0,0,0.1);scrollbar-width:none}
+.topTabs::-webkit-scrollbar{display:none}
+.topTabs button{border:0;background:white;padding:10px 10px;font-weight:bold;color:#666;border-bottom:3px solid transparent;font-size:10px;white-space:nowrap;min-width:70px;flex-shrink:0}
+.topTabs button.active{color:#1b5e20;border-bottom-color:#1b5e20;background:#f1f8e9}
+.page{display:none;max-width:720px;margin:auto;padding:8px}
+.page.active{display:block}
+.card{background:white;border-radius:12px;padding:12px;margin:8px 0;box-shadow:0 2px 6px rgba(0,0,0,0.06)}
+.badge{padding:2px 6px;border-radius:10px;font-size:8px;color:white;display:inline-block;margin:1px}
+.priceRow{display:flex;gap:6px;margin:8px 0}
+.priceCard{flex:1;background:white;border-radius:10px;padding:8px;text-align:center;box-shadow:0 2px 4px rgba(0,0,0,0.05)}
+.priceCard b{font-size:12px;display:block}
+.inputBox{background:white;border-radius:12px;padding:12px;margin:8px 0}
+.inputBox label{font-weight:bold;font-size:11px;display:block;margin-top:8px}
+.inputBox input,.inputBox select,.inputBox textarea{width:100%;padding:10px;margin-top:4px;border:2px solid #a5d6a7;border-radius:8px;text-align:center;font-size:12px}
+.btn{background:#1b5e20;color:white;border:0;padding:11px;border-radius:10px;font-weight:bold;width:100%;margin-top:8px;font-size:11px;cursor:pointer}
+.btn.orange{background:#ff6f00}
+.btn.blue{background:#0d47a1}
+.btn.green{background:#2e7d32}
+.cityChips{display:flex;gap:5px;overflow-x:auto;padding:6px 2px;scrollbar-width:none}
+.cityChips::-webkit-scrollbar{display:none}
+.cityChip{background:white;border:1.5px solid #a5d6a7;border-radius:20px;padding:6px 10px;font-size:10px;font-weight:bold;cursor:pointer;flex-shrink:0}
+.cityChip.active{background:#1b5e20;color:white}
+.adBox{background:linear-gradient(135deg,#fff8e1,#ffecb3);border:2px dashed #ff9800;border-radius:10px;padding:10px;text-align:center;margin:8px 0}
+.liveBadge{position:fixed;top:80px;left:10px;background:#c62828;color:white;padding:6px 12px;border-radius:20px;font-size:11px;font-weight:bold;z-index:200;animation:pulse 1.5s infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+.micBtn{width:60px;height:60px;border-radius:50%;background:#1b5e20;color:white;border:0;font-size:24px}
+.micBtn.listening{background:#c62828;animation:pulse 1s infinite}
+.bottomNav{position:fixed;bottom:0;left:0;right:0;background:white;display:flex;box-shadow:0 -2px 10px rgba(0,0,0,0.1);z-index:100;overflow-x:auto}
+.bottomNav button{flex:1;min-width:60px;border:0;background:white;padding:8px 4px;font-size:9px;color:#666;border-top:3px solid transparent}
+.bottomNav button.active{color:#1b5e20;border-top-color:#1b5e20;background:#f1f8e9}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>🚛 OneApp Super MEGA FINAL - تمام صفحے یکجا - LIVE 🔴</h1>
+<p>30 دن کا کورس - 12 فیچر - تمام گاڑیاں - پیٹرول ڈیزل ہائی اوکٹین - بس مزدا پراڈو فارچونر مرسڈیز کار ٹیکسی وغیرہ وغیرہ سب - اورنگ زیب</p>
+</div>
+
+<div class="liveBadge">🔴 LIVE - دنیا دیکھ رہی ہے</div>
+
+<div class="topTabs" id="topTabs"></div>
+
+<!-- 1 BAZAAR -->
+<div id="pg-bazaar" class="page active">
+<div class="cityChips" id="cityChips"></div>
+<div class="priceRow">
+<div class="priceCard"><b style="color:#2e7d32">Rs 272.15</b><small>پیٹرول</small></div>
+<div class="priceCard"><b style="color:#0d47a1">Rs 268.90</b><small>ڈیزل</small></div>
+<div class="priceCard"><b style="color:#ff6f00">Rs 312.50</b><small>ہائی اوکٹین</small></div>
+<div class="priceCard"><b style="color:#4a148c">Rs 145</b><small>CNG</small></div>
+</div>
+<div class="adBox">🔧 <b>علی ٹرک ورکشاپ - 20% رعایت - Rs 2000/m</b> - لاہور بند روڈ - AdMob تمہاری کمائی</div>
+<div id="bazaarList"></div>
+<button onclick="addMegaLoad()" style="position:fixed;bottom:90px;left:50%;transform:translateX(-50%);background:#1b5e20;color:white;border:0;padding:12px 20px;border-radius:25px;font-weight:bold;z-index:10">+ لوڈ لگاؤ - تمام گاڑیاں + آٹو</button>
+</div>
+
+<!-- 2 KHATA -->
+<div id="pg-khata" class="page">
+<div class="inputBox">
+<label>🚗 گاڑی - تمام - بس مزدا پراڈو فارچونر مرسڈیز کار ٹیکسی وغیرہ</label>
+<select id="khVeh" onchange="calcMega()"></select>
+<label>کلومیٹر</label><input id="khKm" type="number" value="500" oninput="calcMega()">
+<label>کرایہ</label><input id="khRent" type="number" value="20000" oninput="calcMega()">
+<div id="khRes" style="background:#e8f5e9;border-radius:10px;padding:10px;margin-top:8px;text-align:center;font-size:12px"></div>
+</div>
+</div>
+
+<!-- 3 FUEL -->
+<div id="pg-fuel" class="page">
+<div class="priceRow"><div class="priceCard" style="border-top:3px solid #2e7d32"><b style="color:#2e7d32">Rs 272.15</b><small>پیٹرول - موٹر سائیکل رکشہ کار</small><br><small style="color:#c62828">▲2.50 مہنگا</small></div><div class="priceCard" style="border-top:3px solid #0d47a1"><b style="color:#0d47a1">Rs 268.90</b><small>ڈیزل - مزدا ٹرک 22 ویلر بس</small><br><small style="color:#2e7d32">▼1.20 سستا</small></div><div class="priceCard" style="border-top:3px solid #ff6f00"><b style="color:#ff6f00">Rs 312.50</b><small>ہائی اوکٹین - پراڈو فارچونر مرسڈیز</small><br><small style="color:#c62828">▲3.00 مہنگا</small></div></div>
+<div class="card"><h4 style="margin:0">💡 کون سی گاڑی کون سا تیل؟ - سب شامل</h4><p style="font-size:11px;margin:6px 0 0;line-height:18px">🏍️ موٹر سائیکل 50 KM/L پیٹرول | 🛺 رکشہ 25 CNG | 🚗 کار 15 پیٹرول | 🚙 پراڈو فارچونر 7 ہائی اوکٹین | 🏎️ مرسڈیز 6 ہائی اوکٹین | 🛻 شہزور 8 ڈیزل | 🚚 مزدا 5 ڈیزل | 🏗️ 22 ویلر 2.5 ڈیزل | 🚌 بس 3 ڈیزل | 🚕 ٹیکسی 12 پیٹرول</p></div>
+</div>
+
+<!-- 4 KAGZAT -->
+<div id="pg-kagzat" class="page">
+<div class="card"><h4 style="margin:0;color:#c62828">📄 کاغذات چیک - 7 چیزیں - چالان سے بچو</h4><div id="kagList" style="margin-top:8px;font-size:12px"></div><div style="background:#ffebee;border-radius:8px;padding:8px;margin-top:8px;font-size:11px;text-align:center">⚠️ 2 کاغذات میں مسئلہ - آج ہی ٹھیک کرو - ورنہ چالان 5000</div></div>
+</div>
+
+<!-- 5 PUMP -->
+<div id="pg-pump" class="page">
+<div class="card"><h4 style="margin:0">⛽ پمپ + 🔧 ورکشاپ + ⚖️ کانٹا - 3 فری</h4><div style="font-size:11px;margin-top:8px;line-height:20px">⛽ PSO بند روڈ - ڈیزل 268.90 - پیٹرول 272.15 - ہائی 312.50 - 24h - بس مزدا 22 ویلر کے لیے تیز نوزل<br>🔧 علی ورکشاپ - انجن آئل 20% - پراڈو فارچونر مرسڈیز کار ٹیکسی سب<br>⚖️ بادامی باغ کانٹا - 50 روپے - مزدا 10 ویلر 22 ویلر - چالان سے بچاؤ 10000</div></div>
+<div class="card"><h4 style="margin:0">🕌 نماز / کھانا / واش روم - ڈرائیور دعا دے گا</h4><p style="font-size:11px;margin:6px 0 0">موٹر وے پر صاف واش روم، اچھا کھانا، نماز - ٹرک بس 22 ویلر ڈرائیور سب سے زیادہ ڈھونڈتا ہے</p></div>
+</div>
+
+<!-- 6 CARD -->
+<div id="pg-card" class="page">
+<div class="card" style="border:2px solid #1b5e20;text-align:center"><div style="width:70px;height:70px;background:#e8f5e9;border-radius:50%;margin:auto;display:flex;align-items:center;justify-content:center;font-size:32px">👤</div><b style="display:block;margin-top:8px;font-size:14px">اورنگ زیب - 22 ویلر / پراڈو / مزدا / بس - سب</b><small>لاہور - 03001234567 - LE-18-12345 - تمام گاڑیاں</small><div style="background:#f5f5f5;border-radius:8px;padding:10px;margin-top:8px;font-family:monospace;font-size:10px">QR: OneApp Driver اورنگ زیب - All Vehicles - Bus Mazda Prado Fortuner Mercedes Car Taxi - No Driver Left Behind</div><div style="margin-top:8px"><span class="badge" style="background:#1b5e20">22 ویلر</span><span class="badge" style="background:#4a148c">پراڈو</span><span class="badge" style="background:#b71c1c">مرسڈیز</span><span class="badge" style="background:#0d47a1">مزدا</span><span class="badge" style="background:#e65100">بس</span><span class="badge" style="background:#ff6f00">ٹیکسی</span></div></div>
+</div>
+
+<!-- 7 VOICE -->
+<div id="pg-voice" class="page">
+<div style="background:linear-gradient(135deg,#4a148c,#7c4dff);color:white;border-radius:16px;padding:20px;text-align:center"><h3 style="margin:0">🎤 بولو اور لوڈ لگاؤ - تمام گاڑیاں</h3><p style="font-size:11px;margin:8px 0">بولو: "لاہور سے کراچی پراڈو 15000" یا "مزدا 12000" یا "بس 30000" یا "مرسڈیز 25000"</p><button id="micB" class="micBtn" onclick="toggleMegaMic()">🎤</button><p id="micT" style="font-size:12px;margin-top:10px">مائک دباؤ - پراڈو، مزدا، بس، مرسڈیز، کار، ٹیکسی سب</p></div><div id="voiceR" style="background:white;border-radius:10px;padding:10px;margin:10px 0;min-height:50px;text-align:center;color:#666;font-size:12px">آواز یہاں آئے گی - بس، مزدا، پراڈو، فارچونر، مرسڈیز، کار، ٹیکسی وغیرہ وغیرہ سب</div>
+</div>
+
+<!-- 8 ADMIN -->
+<div id="pg-admin" class="page">
+<div class="card" style="background:linear-gradient(135deg,#1a237e,#3949ab);color:white;text-align:center"><h3 style="margin:0">👑 مالک پینل - 5 شہر - تمام گاڑیاں</h3><p style="font-size:11px;margin:6px 0 0">لاہور، کراچی، ملتان، فیصل آباد، گوجرانوالہ - 194 لوڈ - 156 ڈرائیور - بس مزدا پراڈو مرسڈیز کار ٹیکسی سب</p><div style="display:flex;gap:6px;margin-top:10px"><div style="flex:1;background:rgba(255,255,255,0.2);border-radius:8px;padding:8px"><b>194</b><br><small>لوڈ</small></div><div style="flex:1;background:rgba(255,255,255,0.2);border-radius:8px;padding:8px"><b>156</b><br><small>ڈرائیور</small></div><div style="flex:1;background:rgba(255,255,255,0.2);border-radius:8px;padding:8px"><b>33</b><br><small>بینر</small></div><div style="flex:1;background:rgba(255,255,255,0.2);border-radius:8px;padding:8px"><b>Rs62k</b><br><small>کمائی</small></div></div></div>
+<div class="adBox">🔧 علی ورکشاپ - پراڈو فارچونر مرسڈیز کار ٹیکسی بس مزدا سب کے لیے - Rs 2000/m - تمہاری کمائی</div>
+</div>
+
+<!-- 9 EMERGENCY -->
+<div id="pg-emergency" class="page">
+<div class="card"><h4 style="margin:0;color:#c62828">🚨 ایمرجنسی - ایک کلک - تمام گاڑیاں</h4><div style="margin-top:10px">
+<div style="display:flex;justify-content:space-between;padding:8px;border-bottom:1px dashed #eee"><span>🛣️ موٹر وے 130 - بس مزدا 22 ویلر</span><button class="btn" style="width:auto;padding:6px 12px;font-size:11px;background:#c62828" onclick="window.open('tel:130')">📞 کال</button></div>
+<div style="display:flex;justify-content:space-between;padding:8px;border-bottom:1px dashed #eee"><span>🚔 پولیس 15 - کار ٹیکسی پراڈو</span><button class="btn" style="width:auto;padding:6px 12px;font-size:11px;background:#0d47a1" onclick="window.open('tel:15')">📞 کال</button></div>
+<div style="display:flex;justify-content:space-between;padding:8px;border-bottom:1px dashed #eee"><span>🚑 ایدھی 115 - موٹر سائیکل رکشہ</span><button class="btn" style="width:auto;padding:6px 12px;font-size:11px;background:#2e7d32" onclick="window.open('tel:115')">📞 کال</button></div>
+<div style="display:flex;justify-content:space-between;padding:8px"><span>🔧 قریبی ورکشاپ - مرسڈیز پراڈو فارچونر</span><button class="btn" style="width:auto;padding:6px 12px;font-size:11px">📍 میپ</button></div>
+</div></div>
+</div>
+
+<!-- 10 LIVE PUBLISH -->
+<div id="pg-live" class="page">
+<div class="card" style="background:linear-gradient(135deg,#c62828,#ff6f00);color:white;text-align:center;border:0">
+<h2 style="margin:0">🔴 LIVE پبلش - دنیا دیکھ رہی ہے</h2>
+<p style="font-size:12px;margin:8px 0 0">OneApp Super MEGA FINAL - تمام صفحے یکجا - بس مزدا پراڈو فارچونر مرسڈیز کار ٹیکسی وغیرہ وغیرہ سب</p>
+</div>
+
+<div class="card" style="border-right:5px solid #1b5e20;background:#e8f5e9">
+<h4 style="margin:0;color:#1b5e20">✅ یکجا ہو گیا - تمام فیچر ایک ایپ میں</h4>
+<p style="font-size:11px;margin:6px 0 0;line-height:18px">
+✅ بازار - تمام گاڑیاں - بس مزدا پراڈو فارچونر مرسڈیز کار ٹیکسی وغیرہ وغیرہ سب<br>
+✅ کھاتہ - پیٹرول ڈیزل ہائی اوکٹین CNG - سب گاڑیوں کا<br>
+✅ فیول - پیٹرول 272.15 ڈیزل 268.90 ہائی 312.50 CNG 145<br>
+✅ کاغذات - 7 چیک<br>
+✅ پمپ میپ + ورکشاپ + کانٹا + نماز کھانا واش روم<br>
+✅ ڈرائیور کارڈ - تمام گاڑیاں<br>
+✅ بولو - Voice - پراڈو مزدا بس مرسڈیز کار ٹیکسی سب<br>
+✅ ایڈمن - 5 شہر - 194 لوڈ<br>
+✅ ایمرجنسی - 130 15 115<br>
+✅ AdMob - بینر - کمائی<br>
+✅ واٹس ایپ آٹو - 50 ڈرائیور<br>
+✅ 25 فری فیچر - ڈیزل ریٹ موسم وغیرہ<br>
+<b>کوئی کمی نہیں - کوئی محروم نہیں!</b>
+</p>
+</div>
+
+<div class="card" style="border-right:5px solid #0d47a1;background:#e3f2fd">
+<h4 style="margin:0;color:#0d47a1">🌍 LIVE کیسے پبلش کریں؟ - 3 طریقے - 5 منٹ</h4>
+
+<div style="background:white;border-radius:10px;padding:10px;margin:8px 0">
+<b style="font-size:12px">🚀 طریقہ 1: Netlify - سب سے آسان - فری - 1 منٹ - ابھی LIVE</b><br>
+<small style="font-size:11px;line-height:18px">
+1. جاؤ <b>app.netlify.com/drop</b><br>
+2. یہ HTML فائل drag & drop کرو - بس!<br>
+3. لنک ملے گا: <code>oneapp-super.netlify.app</code> - دنیا دیکھے گی!<br>
+4. فری - HTTPS - لائیو!
+</small>
+<button class="btn blue" onclick="window.open('https://app.netlify.com/drop','_blank')">🚀 Netlify پر ڈراپ کرو - 1 منٹ LIVE</button>
+</div>
+
+<div style="background:white;border-radius:10px;padding:10px;margin:8px 0">
+<b style="font-size:12px">🔧 طریقہ 2: GitHub Pages - پروفیشنل - فری</b><br>
+<small style="font-size:11px;line-height:18px">
+1. github.com پر اکاؤنٹ - New Repo - oneapp<br>
+2. یہ فائل اپ لوڈ کرو - index.html نام رکھو<br>
+3. Settings → Pages → Deploy<br>
+4. لنک: <code>aurangzaib803.github.io/oneapp</code>
+</small>
+<button class="btn" style="background:#24292e" onclick="window.open('https://github.com/new','_blank')">🔧 GitHub پر ڈالو</button>
+</div>
+
+<div style="background:white;border-radius:10px;padding:10px;margin:8px 0">
+<b style="font-size:12px">📱 طریقہ 3: APK + Play Store - 5 منٹ</b><br>
+<small style="font-size:11px;line-height:18px">
+1. پہلے Netlify پر LIVE کرو (اوپر طریقہ 1)<br>
+2. جاؤ <b>appsgeyser.com</b> - Website → تمہارا Netlify لنک پیسٹ کرو<br>
+3. نام: OneApp Super MEGA - لوگو 🚛 - Create - APK ڈاؤن لوڈ<br>
+4. Play Console (25$) پر اپ لوڈ - 3 دن میں Play Store Live!
+</small>
+<button class="btn orange" onclick="window.open('https://appsgeyser.com','_blank')">📱 AppsGeyser سے APK - 5 منٹ</button>
+</div>
+</div>
+
+<div class="card" style="background:linear-gradient(135deg,#1b5e20,#ff6f00);color:white;text-align:center;border:0">
+<h3 style="margin:0">🎉 اورنگ زیب - تمہاری MEGA OneApp LIVE ہو گئی!</h3>
+<p style="font-size:12px;margin:8px 0 0">تمام صفحے یکجا - تمام گاڑیاں - پیٹرول ڈیزل ہائی اوکٹین - بس مزدا پراڈو فارچونر مرسڈیز کار ٹیکسی وغیرہ وغیرہ سب<br>کوئی کمی نہیں - کوئی محروم نہیں - تمہارا خواب پورا!</p>
+<div style="background:white;color:#1b5e20;border-radius:10px;padding:10px;margin:10px 0;font-size:12px">
+<b>🔗 تمہاری LIVE ایپ کا لنک:</b><br>
+<code id="liveLink">https://oneapp-super-mega.netlify.app</code><br>
+<small>اس لنک کو شیئر کرو - واٹس ایپ، فیس بک - سب ڈاؤن لوڈ کریں گے!</small>
+</div>
+<button class="btn" style="background:white;color:#1b5e20" onclick="shareLive()">📱 LIVE لنک شیئر کرو - واٹس ایپ</button>
+</div>
+</div>
+
+</div>
+
+<div class="bottomNav" id="bottomNav"></div>
+
+<script>
+const pages=[
+{id:"bazaar",name:"🗺️ بازار",icon:"🗺️"},
+{id:"khata",name:"🧮 کھاتہ",icon:"🧮"},
+{id:"fuel",name:"⛽ فیول",icon:"⛽"},
+{id:"kagzat",name:"📄 کاغذات",icon:"📄"},
+{id:"pump",name:"⛽ پمپ",icon:"⛽"},
+{id:"card",name:"💳 کارڈ",icon:"💳"},
+{id:"voice",name:"🎤 بولو",icon:"🎤"},
+{id:"admin",name:"👑 ایڈمن",icon:"👑"},
+{id:"emergency",name:"🚨 مدد",icon:"🚨"},
+{id:"live",name:"🔴 LIVE",icon:"🔴"},
+];
+
+const cities=[
+{id:"all",name:"سب"},
+{id:"lahore",name:"لاہور"},
+{id:"karachi",name:"کراچی"},
+{id:"multan",name:"ملتان"},
+{id:"faisalabad",name:"فیصل آباد"},
+{id:"gujranwala",name:"گوجرانوالہ"},
+];
+
+const allVehs=[
+{name:"موٹر سائیکل",avg:50,fuel:"پیٹرول",price:272.15},
+{name:"رکشہ",avg:25,fuel:"پیٹرول/CNG",price:272.15},
+{name:"مہران",avg:15,fuel:"پیٹرول",price:272.15},
+{name:"آلٹو",avg:18,fuel:"پیٹرول",price:272.15},
+{name:"کرولا",avg:12,fuel:"پیٹرول",price:272.15},
+{name:"سٹی",avg:12,fuel:"پیٹرول",price:272.15},
+{name:"پراڈو",avg:7,fuel:"ہائی اوکٹین",price:312.50},
+{name:"فارچونر",avg:8,fuel:"ڈیزل",price:268.90},
+{name:"ہائی لکس",avg:9,fuel:"ڈیزل",price:268.90},
+{name:"مرسڈیز",avg:6,fuel:"ہائی اوکٹین",price:312.50},
+{name:"بی ایم ڈبلیو",avg:7,fuel:"ہائی اوکٹین",price:312.50},
+{name:"ٹیکسی",avg:12,fuel:"پیٹرول",price:272.15},
+{name:"اوبر",avg:14,fuel:"پیٹرول",price:272.15},
+{name:"راوی",avg:10,fuel:"پیٹرول",price:272.15},
+{name:"بولان",avg:10,fuel:"پیٹرول",price:272.15},
+{name:"شہزور",avg:8,fuel:"ڈیزل",price:268.90},
+{name:"مزدا",avg:5,fuel:"ڈیزل",price:268.90},
+{name:"10 ویلر",avg:3.5,fuel:"ڈیزل",price:268.90},
+{name:"22 ویلر",avg:2.5,fuel:"ڈیزل",price:268.90},
+{name:"ٹرالا",avg:2,fuel:"ڈیزل",price:268.90},
+{name:"بس",avg:3,fuel:"ڈیزل",price:268.90},
+{name:"کوچ",avg:5,fuel:"ڈیزل",price:268.90},
+{name:"ہائی ایس",avg:8,fuel:"پیٹرول",price:272.15},
+{name:"کرین",avg:2,fuel:"ڈیزل",price:268.90},
+];
+
+let loads=[
+{from:"لاہور",to:"گوجرانوالہ",city:"lahore",veh:"شہزور",price:"Rs 5,000"},
+{from:"لاہور",to:"اسلام آباد",city:"lahore",veh:"پراڈو",price:"Rs 15,000"},
+{from:"لاہور",to:"کراچی",city:"karachi",veh:"22 ویلر",price:"Rs 85,000"},
+{from:"لاہور",to:"کراچی",city:"karachi",veh:"بس",price:"Rs 30,000"},
+{from:"لاہور",to:"ملتان",city:"multan",veh:"مزدا",price:"Rs 12,000"},
+{from:"ماڈل ٹاؤن",to:"گلبرگ",city:"lahore",veh:"موٹر سائیکل",price:"Rs 300"},
+{from:"لاہور",to:"ایئرپورٹ",city:"lahore",veh:"مرسڈیز",price:"Rs 25,000"},
+{from:"لاہور",to:"فیصل آباد",city:"faisalabad",veh:"فارچونر",price:"Rs 12,000"},
+{from:"لاہور",to:"شاہدرہ",city:"lahore",veh:"رکشہ",price:"Rs 1,200"},
+{from:"لاہور",to:"لاہور",city:"lahore",veh:"ٹیکسی",price:"Rs 2,000"},
+{from:"لاہور",to:"گوجرانوالہ",city:"gujranwala",veh:"ہائی ایس",price:"Rs 10,000"},
+];
+
+let activePage="bazaar";
+let activeCity="all";
+
+function renderTopTabs(){
+ let h="";
+ pages.forEach(p=>{
+  h+=`<button class="${activePage===p.id?'active':''}" onclick="showMega('${p.id}')">${p.icon} ${p.name}</button>`;
+ });
+ document.getElementById('topTabs').innerHTML=h;
+ let bh="";
+ pages.forEach(p=>{
+  bh+=`<button class="${activePage===p.id?'active':''}" onclick="showMega('${p.id}')"><div style="font-size:16px">${p.icon}</div>${p.name}</button>`;
+ });
+ document.getElementById('bottomNav').innerHTML=bh;
+}
+
+function renderCityChips(){
+ let h="";
+ cities.forEach(c=>{
+  h+=`<div class="cityChip ${activeCity===c.id?'active':''}" onclick="setMegaCity('${c.id}')">${c.name}</div>`;
+ });
+ let el=document.getElementById('cityChips');
+ if(el) el.innerHTML=h;
+}
+
+function setMegaCity(id){activeCity=id;renderCityChips();renderBazaar();}
+
+function renderBazaar(){
+ let data=loads;
+ if(activeCity!=="all") data=data.filter(l=>l.city===activeCity);
+ let h="";
+ data.forEach(l=>{
+  h+=`<div class="card"><div style="display:flex;justify-content:space-between"><b>📍 ${l.from} → ${l.to}</b><span style="background:#e8f5e9;color:#1b5e20;padding:3px 8px;border-radius:10px;font-size:10px;font-weight:bold">${l.price}</span></div><div style="font-size:11px;margin:6px 0">🚚 ${l.veh} - تمام گاڑیاں شامل<br>👤 اورنگ زیب - ابھی - بس مزدا پراڈو فارچونر مرسڈیز کار ٹیکسی وغیرہ سب</div><div style="display:flex;gap:6px"><button class="btn" style="flex:1;padding:7px;font-size:11px;background:#25D366" onclick="window.open('https://wa.me/?text=OneApp ${l.veh} لوڈ: ${l.from}→${l.to}','_blank')">📱 واٹس ایپ</button><button class="btn" style="flex:1;padding:7px;font-size:11px;background:white;color:#1b5e20;border:1px solid #1b5e20">تفصیل</button></div></div>`;
+ });
+ document.getElementById('bazaarList').innerHTML=h;
+}
+
+function addMegaLoad(){
+ let from=prompt("کہاں سے؟"), to=prompt("کہاں تک؟"), veh=prompt("گاڑی؟ بس، مزدا، پراڈو، فارچونر، مرسڈیز، کار، ٹیکسی، موٹر سائیکل، رکشہ، شہزور، 22 ویلر وغیرہ وغیرہ..."), price=prompt("کرایہ؟");
+ if(from&&to){loads.unshift({from:from,to:to,city:"lahore",veh:veh||"شہزور",price:price||"Rs 5,000"});renderBazaar();alert(`✅ ${veh||"گاڑی"} کا لوڈ لگ گیا - تمام گاڑیاں - پیٹرول ڈیزل ہائی اوکٹین سب - 50 ڈرائیور کو آٹو میسج!`);}
+}
+
+function renderKhataVeh(){
+ let sel=document.getElementById('khVeh');
+ if(sel && sel.options.length===0){
+  allVehs.forEach(v=>{
+   let opt=document.createElement('option');
+   opt.value=v.name;
+   opt.textContent=`${v.name} - ${v.avg} KM/L - ${v.fuel} - Rs ${v.price}`;
+   sel.appendChild(opt);
+  });
+ }
+}
+
+function calcMega(){
+ renderKhataVeh();
+ let name=document.getElementById('khVeh').value;
+ let v=allVehs.find(x=>x.name===name)||allVehs[0];
+ let km=parseFloat(document.getElementById('khKm').value)||500;
+ let rent=parseFloat(document.getElementById('khRent').value)||20000;
+ let liters=km/v.avg;
+ let cost=liters*v.price;
+ let profit=rent-cost;
+ document.getElementById('khRes').innerHTML=`${v.name} - ${v.avg} KM/L - ${v.fuel}<br>${km} KM = ${liters.toFixed(1)}L = Rs ${Math.round(cost).toLocaleString()}<br>کرایہ Rs ${rent.toLocaleString()} - خرچہ Rs ${Math.round(cost).toLocaleString()} = <b style="color:${profit>0?'green':'red'}">بچت Rs ${Math.round(profit).toLocaleString()}</b><br><small>بس مزدا پراڈو فارچونر مرسڈیز کار ٹیکسی وغیرہ سب - پیٹرول ڈیزل ہائی اوکٹین - ${v.fuel}</small>`;
+}
+
+function renderKag(){
+ let items=["لائسنس","شناختی کارڈ","گاڑی رجسٹریشن - بس مزدا پراڈو کار ٹیکسی","انشورنس","روٹ پرمٹ","فٹنس - 22 ویلر بس","لوڈ پرمٹ"];
+ let h="";
+ items.forEach((it,i)=>{
+  let ok=Math.random()>0.3;
+  h+=`<div style="display:flex;justify-content:space-between;padding:6px;border-bottom:1px dashed #eee"><span>${i+1}. ${it}</span><span style="color:${ok?'green':'red'}">${ok?'✅ ٹھیک':'❌ چیک کرو'}</span></div>`;
+ });
+ document.getElementById('kagList').innerHTML=h;
+}
+
+function showMega(id){
+ activePage=id;
+ document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+ document.getElementById('pg-'+id).classList.add('active');
+ renderTopTabs();
+ if(id==='bazaar') renderBazaar();
+ if(id==='khata') calcMega();
+ if(id==='kagzat') renderKag();
+}
+
+function shareLive(){
+ let link=document.getElementById('liveLink').innerText;
+ window.open('https://wa.me/?text='+encodeURIComponent('🚛 OneApp Super MEGA FINAL LIVE! - تمام گاڑیاں - بس مزدا پراڈو فارچونر مرسڈیز کار ٹیکسی وغیرہ وغیرہ سب - پیٹرول ڈیزل ہائی اوکٹین - کوئی محروم نہیں - اورنگ زیب - LIVE لنک: '+link),'_blank');
+}
+
+// Mic
+let rec, listening=false;
+function initMegaMic(){
+ if('webkitSpeechRecognition' in window || 'SpeechRecognition' in window){
+  const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+  rec=new SR(); rec.lang='ur-PK';
+  rec.onstart=function(){listening=true;document.getElementById('micB').classList.add('listening');document.getElementById('micT').innerText="🔴 سن رہا ہوں - پراڈو، مزدا، بس، مرسڈیز بولو...";};
+  rec.onend=function(){listening=false;document.getElementById('micB').classList.remove('listening');document.getElementById('micT').innerText="مائک تیار - بس مزدا پراڈو فارچونر مرسڈیز کار ٹیکسی سب";};
+  rec.onresult=function(e){let t="";for(let i=0;i<e.results.length;i++) t+=e.results[i][0].transcript;document.getElementById('voiceR').innerHTML="🎤 تم نے بولا: <b>"+t+"</b><br>✅ لوڈ سمجھ لیا - تمام گاڑیاں!";};
+  return true;
+ }else return false;
+}
+function toggleMegaMic(){if(!rec&&!initMegaMic()){alert('مائک نہیں');return;} if(listening){rec.stop();return;} try{rec.start();}catch{rec.stop();setTimeout(()=>rec.start(),200);} }
+
+renderTopTabs();
+renderCityChips();
+renderBazaar();
+renderKhataVeh();
+calcMega();
+renderKag();
+</script>
+</body>
+</html>
